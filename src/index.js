@@ -2,4 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { FirebaseContest } from './store/firebaseContest'
+import firebase from './Firebase/config'
+
+ReactDOM.render(
+<FirebaseContest.Provider value={{firebase}}>
+<App />
+</FirebaseContest.Provider>
+ ,document.getElementById('root'));
