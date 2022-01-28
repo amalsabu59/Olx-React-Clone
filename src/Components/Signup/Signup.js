@@ -14,7 +14,7 @@ export default function Signup() {
   const { firebase } = useContext(FirebaseContest)
   const handleSubmit = (e) => {
     e.preventDefault()
-    firebase.auth().signInWithEmailAndPassword(email, password)
+    firebase.auth().createUserWithEmailAndPassword(email, password)
       .then((result) => {
         result.user.updateProfile({displayName:username})
         //console.log(username)
