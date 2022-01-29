@@ -1,7 +1,7 @@
 import React, { useState,useContext } from 'react';
 
 import Logo from '../../olx-logo.png';
-import { FirebaseContest } from '../../store/firebaseContest';
+import { firebaseContest } from '../../store/Contest';
 import './Signup.css';
 import { useHistory } from 'react-router-dom';
 export default function Signup() {
@@ -11,7 +11,7 @@ export default function Signup() {
     const [phone, setPhone] = useState('');
     const [password, setPassword] = useState('');
 
-  const { firebase } = useContext(FirebaseContest)
+  const { firebase } = useContext(firebaseContest)
   const handleSubmit = (e) => {
     e.preventDefault()
     firebase.auth().createUserWithEmailAndPassword(email, password)
