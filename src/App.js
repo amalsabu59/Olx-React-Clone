@@ -8,6 +8,7 @@ import  {AuthContext, FirebaseContest}  from './store/firebaseContest';
  * ?  =====Import Components=====
  */
 import Home from './Pages/Home';
+import Create from './Pages/Create'
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
         </Route>
         <Route path='/login'>
           <Login/>
+        </Route>
+        <Route path='/create'>
+          <Create/>
         </Route>
       </Router>
       
