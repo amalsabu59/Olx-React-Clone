@@ -7,7 +7,7 @@ import { FirebaseContest,AuthContext } from '../../store/firebaseContest';
 const Create = () => {
   
   const {firebase} = useContext(FirebaseContest)
-  const history = useHistory
+  const history = useHistory()
   const {user} = useContext(AuthContext)
   const [name, setName] = useState('');
   const [category, setCategory] = useState('');

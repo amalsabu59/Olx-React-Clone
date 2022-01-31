@@ -39,7 +39,7 @@ function Header() {
           <Arrow></Arrow>
         </div>
         <div className="loginPage">
-          <span> {user ? user.displayName :'Login'}</span>
+          <span> {user ?`${ user.displayName }`:'Login'}</span>
           <hr />
           
         </div>

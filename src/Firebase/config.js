@@ -3,12 +3,14 @@ import 'firebase/auth'
 import 'firebase/firebase'
 import 'firebase/storage'
 
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyACiZxToJFS2ft_DLWUX3Hnalvo4SL4ICA",
-    authDomain: "olxx-1c978.firebaseapp.com",
-    projectId: "olxx-1c978",
-    storageBucket: "olxx-1c978.appspot.com",
-    messagingSenderId: "47827548044",
-    appId: "1:47827548044:web:3a515d4126529a498648a9"
-  };
+  apiKey: "AIzaSyCN_StSOVPKEzMcotP1p36XITADxatGTPA",
+  authDomain: "fir-6d5cf.firebaseapp.com",
+  projectId: "fir-6d5cf",
+  storageBucket: "fir-6d5cf.appspot.com",
+  messagingSenderId: "801855333692",
+  appId: "1:801855333692:web:163a88a923efd880672a39",
+  measurementId: "G-C5L1T4LBX5"
+};
 export default  firebase.initializeApp(firebaseConfig);

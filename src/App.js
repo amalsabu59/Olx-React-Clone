@@ -9,6 +9,7 @@ import  {AuthContext, FirebaseContest}  from './store/firebaseContest';
  */
 import Home from './Pages/Home';
 import Create from './Pages/Create'
+import View from './Pages/ViewPost'
 
 
 function App() {
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path='/create'>
           <Create/>
+        </Route>
+        <Route path='/view'>
+          <View/>
         </Route>
       </Router>
       
