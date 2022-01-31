@@ -10,6 +10,7 @@ import  {AuthContext, FirebaseContest}  from './store/firebaseContest';
 import Home from './Pages/Home';
 import Create from './Pages/Create'
 import View from './Pages/ViewPost'
+import  Post from './store/PostContext'
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
   })
   return (  
     <div>
+
+      <Post>
       <Router>
         <Route exact  path='/'>
           <Home />
@@ -43,6 +46,8 @@ function App() {
           <View/>
         </Route>
       </Router>
+
+      </Post>
       
     </div>
   );
